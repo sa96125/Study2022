@@ -1,11 +1,23 @@
 # 컴퓨터 내부의 언어체계
 
+<p>
+  <img alt="bit" src="https://img.shields.io/badge/비트-white.svg">
+  <img alt="dmorgan" src="https://img.shields.io/badge/드모르간-white.svg">
+  <img alt="overflow" src="https://img.shields.io/badge/오버플로-white.svg">
+  <img alt="readingzero" src="https://img.shields.io/badge/리딩제로-white.svg">
+  <img alt="Ones' complement" src="https://img.shields.io/badge/1의 보수-white.svg">
+  <img alt="Twos' complement" src="https://img.shields.io/badge/2의 보수-white.svg">
+
+  <img align="right" alt="Hooks" src="https://img.shields.io/badge/문제 해결을 위한 학문-black.svg">
+</p>
+
+
 _" 컴퓨터 과학 또는 전산학은 알고리즘 과정, 계산 기계 그리고 계산 자체에 대한 학문이다. “ - wikipedia -_\
 _" 컴퓨터 과학의 기본적인 정의는 <mark style="color:blue;">**문제해결을 위한 학문**</mark>이다 " -David J. Malan-_
 
 __
 
-### &#x20;<mark style="background-color:yellow;">기본 배경</mark> <a href="#undefined" id="undefined"></a>
+### &#x20;<mark>기본 배경</mark> <a href="#undefined" id="undefined"></a>
 
 인간은 의사소통하기 위해서 언어를 사용해왔습니다. 전 세계에 많은 언어가 존재하지만 의사소통이 가능한 이유는 지칭하는 어떤 것의 문맥은 동일하기 때문입니다. 문맥이란 ‘TIME’과 ‘시간’이 모습은 다르지만 의미는 같은 것을 의미합니다.
 
@@ -23,7 +35,7 @@ __
 
 
 
-### <mark style="background-color:yellow;">논리연산</mark> <a href="#undefined" id="undefined"></a>
+### <mark>논리연산</mark> <a href="#undefined" id="undefined"></a>
 
 비트는 1과 0만을 사용할 수 있는 2진법이지만 논리연산과 NOT, AND, OR연산으로 계산할 수 있습니다. 또한 XOR과 드모르간 법칙을 적용할 수 있습니다. XOR은 서로 다른 논리의 계산을 TRUE로 반환, 같은 값은 FALSE로 반환하는 계산식입니다. 드모르간 법칙은 수학자 드모르간이 발견한 법칙으로 a AND b는 NOT(NOT a OR NOT b)와 같다는 것을 증명합니다.&#x20;
 
@@ -41,7 +53,7 @@ _"부정논리, NOT연산을 연속으로 쓰는 것은 효율성이 많이 떨�
 
 
 
-### <mark style="background-color:yellow;">정수를 비트로 표현하는 방</mark>
+### <mark>정수를 비트로 표현하는 방</mark>
 
 수는 논리보다 더 복잡하지만 단어보다는 훨씬 단순합니다. 우리는 보통 10진수 체계를 사용하여 10가지 기호를 한자리를 표현합니다. 1000(10\*\*3 + 10\*\*2 + 10\*\*1 + 10\*\*0)처럼 표현하는 것을 base10 시스템이라 말합니다. 비트를 사용해 값을 만들 때도 이와 비슷하게 접근할 수 있습니다. 2진수에서는 기호가 2개이기 때문에 각 상자의 자릿수는 2의 거듭제곱이며, 따라서 2진수 체계는 10을 밑으로 하지않고 2를 밑으로 하는 시스템입니다.
 
@@ -61,7 +73,7 @@ $$
 
 
 
-### <mark style="background-color:yellow;">**덧셈, 음수, 실수표현**</mark>
+### <mark>**덧셈, 음수, 실수표현**</mark>
 
 비트도 정수처럼 덧셈, 음수표현, 실수표현이 가능합니다. 비트 덧셈에서 기억해야할 것은 비트를 서로, 더한 결과는 XOR한 값과 같습니다. 또 덧셈 결과가 우리가 사용할 비트의 개수로 표현할 수 있는 범위를 벗어나면 **오버플로**가 발생합니다.
 
