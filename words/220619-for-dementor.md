@@ -1,4 +1,8 @@
-# 220620 for dementor
+---
+description: 서버 구축에 필요한 개념 정리
+---
+
+# 220619 for dementor
 
 ### Nest
 
@@ -162,8 +166,6 @@ middleware, pipe line과 같은 전역 기능이 필요할 때, App Module에 �
 해당 유저가 permission을 가지고 있는지 확인하는 과정 ex) 권한 확인(인가)
 
 예를 들어, token발급 절차는 인증과 관련있는 로직이고, @useGuards()는 Nest에서 리소스 접근에 권한을 확인하는 역할을 합니다..
-
-
 
 
 

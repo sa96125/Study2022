@@ -6,4 +6,4 @@
 
 ## 단어장 <a href="#words" id="words"></a>
 
-* [220620 for dementor](words/220620-for-dementor.md)
+* [220619 for dementor](words/220619-for-dementor.md)
