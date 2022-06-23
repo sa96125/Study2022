@@ -13,6 +13,7 @@
 ## 데이터구조와 알고리즘 <a href="#data-structure-algorithm" id="data-structure-algorithm"></a>
 
 * [필수 메서드](data-structure-algorithm/methods.md)
+* [기본 데이터 구조](data-structure-algorithm/base.md)
 
 ## 자바스크립트 완벽가이드 <a href="#javascript" id="javascript"></a>
 
