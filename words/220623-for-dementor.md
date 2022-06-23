@@ -20,7 +20,7 @@
 
 
 
-**IOC(Inversion of Control)**
+### **IOC(Inversion of Control)**
 
 제어의 역전이란 객체의 생성부터 소멸까지 어플리케이션이 제어권을 갖는 것이 아니라 이런 것을 관리해주는 컨테이너에게 넘기는 것을 말합니다. 즉, 개발자가 열심히 객체를 생성하고, 의존성을 맺어주는 귀찮은 작업들을 컨테이너가 대신해주는 것입니다.
 
@@ -32,7 +32,7 @@
 
 
 
-**Extends vs Implements ( about Inheritance )**
+### **Extends vs Implements ( about Inheritance )**
 
 상속과 인터페이스는 계층화를 위해 사용됩니다. 상속의 형태 중 extends는 상위 클래스의 변수 또는 메소드를 그대로 사용하는 방식이고 implements는 정의된 타입대로 구현을 해야하는 방식입니다. 즉, overriding을 하느냐 안하느냐로 나눌 수도 있습니다.
 
