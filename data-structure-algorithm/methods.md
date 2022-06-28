@@ -4,23 +4,32 @@
 
 ### **배열 요소(문자열) 중복 제거 후 반환**
 
-* \[...new Set(arr)]
+* \[...new Set(arr)] : Array
 
-\
+{% hint style="info" %}
+&#x20;자료구조가 문자열로 이루어진 배열, 중복 제
+
+\["muzi frodo","apeach frodo","frodo neo","muzi neo","apeach muzi"]
+{% endhint %}
+
+
+
+
+
 
 
 ### **객체 키, 배열 루프**
 
-* let \[key, value] of Object.entries(arr)
-* key of Object.keys(arr)
-* value of Object.values(arr)
+* let \[key, value] of Object.entries(obj) : Array
+* key of Object.keys(obj) : Array
+* value of Object.values(obj) : Array
 
 \
 
 
 ### **배열 값(문자) 포함 확인**
 
-* arr.includes(string)
+* arr.includes(string) : Index
 
 \
 
@@ -29,22 +38,23 @@
 
 * arr.indexOf(str)
 
-\
-
-
 ### **배열 분리, 합체, 역순**
 
-* str.split(‘’)
-* str.join(‘’)
-* str.reverse()
+
+
+
+
+* str.split(‘’) : Array
+* arr.join(‘’) : String
+* arr.reverse() : Array
 
 \
 
 
 ### **문자열 대/소문자로 변경 후 반환**
 
-* str.toLowerCase()
-* str.toUpperCase()
+* str.toLowerCase() : String
+* str.toUpperCase() : String
 
 \
 
