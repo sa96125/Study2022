@@ -1,4 +1,8 @@
-# Frequently used Methods
+---
+description: 알고리즘 문제를 해결할 때, 자주 사용한 브라우저 내장 메서드 및 자바스크립트 팁을 정리하였습니다.
+---
+
+# My Cheet sheet
 
 ****
 
