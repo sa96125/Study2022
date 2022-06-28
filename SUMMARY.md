@@ -14,6 +14,8 @@
 ## 자바스크립트 완벽가이드 <a href="#javascript" id="javascript"></a>
 
 * [언어적 배경](javascript-the-definitive-guide/background.md)
+* [언어의 어휘 구조](javascript/undefined.md)
+* [자바스크립트 엔진](javascript/undefined-1.md)
 
 ## 개념 정리 <a href="#words" id="words"></a>
 
