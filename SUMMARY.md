@@ -22,3 +22,4 @@
 * [220619 Nest](words/220619-for-dementor.md)
 * [220623 Nest](words/220623-nest.md)
 * [220628 Svelte](words/220608-svelte.md)
+* [220702](words/220702.md)
