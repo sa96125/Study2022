@@ -37,7 +37,7 @@ let 상수명: type = value
 
 
 
-#### 데이터 타
+#### 데이터 타입
 
 ```swift
 // 기본 타입(구조체)
@@ -77,3 +77,85 @@ let 상수명: type = value
 * 배열생성 Array\<Int>(), \[]를 사용한다.&#x20;
 * 딕셔너리생성 Dictionary\<String, Any>(), \[:]를 사용한다.
 * Set타입은 축약문법 존재하지 않는다.
+
+
+
+#### 함수의 선언
+
+```swift
+func sum(a: Int, b: Int) -> Void {
+    return a+b
+}
+
+// 타입 생
+func noInputAndOutput() {
+}
+
+// 디폴트 값 
+func sum(a: Int, b: Int = 100) -> Void {
+    return a+b
+}
+
+// 전달인자 레이블, 생략
+func sum(inputA a: Int, _ b: Int = 100) -> Void {
+    return a+b
+}
+sum(inputA: 3, 4) // 7
+
+// 가변 매개변수
+func sum(inputA a: Int, inputRest b: Int...) -> Void {
+    return a+b
+}
+
+let someFunc:(String, String) -> Void = sum(a:b:)
+
+```
+
+* 함수 호출시 사용하는 매개변수를 이해하기 쉬운 형태로 지정한 이름을 사용할 수 있다.
+* 가변 매개변수를 사용하는 스코프에서 매개변수의 타입을 배열이다.
+
+
+
+#### 조건문
+
+```swift
+if condition {}
+else if condition {}
+else {}
+
+switch <varName> {
+    case condition:
+    case condition:
+    default :
+}
+```
+
+* 스위치문에서 모든 범위를 커버할 수 없을 때를 대비하여 default는 필수
+* 스위치 case에서 break는 생략하여도 동작, 무시하려면 fallthough
+* 스위치 condition에 범위연산자 사용가능
+
+
+
+#### 반복문
+
+```swift
+for in { }
+while { }
+repeat { } while { }
+```
+
+
+
+#### 옵셔널
+
+```swift
+var number: Int?
+
+// nil이 아닐 경우, 실행하는 블록
+if let number { }
+```
+
+* nil의 가능성을 따로 주석으로 표현할 필요없이 코드로 표현(명시적)
+* optional은 nil을 할당할 수 있다.
+* optional은 일반 변수처럼 사용할 수 없다. 연산하는 것이 불가능
+
