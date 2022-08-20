@@ -113,6 +113,7 @@ let someFunc:(String, String) -> Void = sum(a:b:)
 
 * 함수 호출시 사용하는 매개변수를 이해하기 쉬운 형태로 지정한 이름을 사용할 수 있다.
 * 가변 매개변수를 사용하는 스코프에서 매개변수의 타입을 배열이다.
+* 함수마다 가변 매개변수는 하나만 가질 수 있다.
 
 
 
@@ -158,4 +159,95 @@ if let number { }
 * nil의 가능성을 따로 주석으로 표현할 필요없이 코드로 표현(명시적)
 * optional은 nil을 할당할 수 있다.
 * optional은 일반 변수처럼 사용할 수 없다. 연산하는 것이 불가능
+* !을 사용하여 값을 강제 추출할 수 있지만 선호하지 않음 만약 nil일 경우 런타임 오
+
+
+
+#### 구조체
+
+<pre class="language-swift"><code class="lang-swift"><strong>struct Int { 
+</strong><strong>    static // 타입명에서 사용가능한 프로퍼티, 메서드
+</strong><strong>} </strong></code></pre>
+
+* 'class' 처럼 작은 따음표를 사용하면 키워드 네임을 사용할 수 있다.
+* 구조체 인스턴스를 let, var 선언관계 없이 프로퍼티, 메서드 변경이 불가
+* 상속할 수 없다.
+* 값 타입
+* 타입을 복사한다던지, 상속이 필요없을 경우 사용한다.
+* 스위프트의 대부분의 기본 타입은 구조체로 이뤄진다.
+
+
+
+#### 클래스
+
+<pre class="language-swift"><code class="lang-swift"><strong>class Person {
+</strong><strong>    static // 재정의 불가 타입메서드
+</strong><strong>    class // 재정의 가능 타입메서
+</strong><strong>} </strong></code></pre>
+
+* 스위프트 클래스는 다중상속이 불가능
+* 상속이 가능하다.
+* 참조 타입
+* 클래스 인스턴스를 let, var 선언하면 프로퍼티, 메서드 변경 가능
+* 프레임워크는 클래스를 사용한다.
+
+
+
+#### 열거형
+
+<pre class="language-swift"><code class="lang-swift"><strong>enum Weekdays { 
+</strong><strong>    case 월 = 0
+</strong><strong>    case 화
+</strong>    case 수
+    case 목
+<strong>}
+</strong><strong>
+</strong><strong>let 월: Weekdays? = Weekdays(rawValue:0)</strong></code></pre>
+
+* 다른 언어에서는 정수로 열거되는 반면 스위프트에서는 문자열 지정을 통해 열거가능하다.
+* 상속할 수 없다.
+* Weekdays.월.rawValue 를 통해 열거된 케이스 값을 가져온다.
+* 초기 0의 값을 할당하면 자동으로 다음 케이스에 1씩 증가된 값을 할당한다.
+* 메서드를 추가할 수 있다.
+* <mark style="background-color:red;">rawValue로 열거형 초기화하면 에러.</mark>
+
+
+
+#### 클로저
+
+```swift
+{
+    ( ) -> Void in
+}
+
+// 상수에 할
+let minus: (Int, Int) -> Void
+minus = { (a:Int, b:Int) -> Int in 
+    return a-b
+}
+
+// 후행 클로저
+result = calculate(a:10, b:10) { (left: Int, right: Int) -> Int in
+    return left + right
+}
+
+// 반환 타입 생략
+result = calculate(a:10, b:10) { (left: Int, right: Int) in
+    return left + right
+}
+
+// 매개변수 타입 생략
+result = calculate(a:10, b:10) {
+    return $0 + $1
+}
+
+// 암시적 반환
+result = calculate(a:10, b:10) { $0 + $1 }
+
+```
+
+* 콜백함수로 사용
+* 컴파일러가 이미 클로저가 들어올 부분에 타입을 알고 있기 때문에 생략이 가능하다.
+* 매개변수 타입 생략시 단축 인자이름으로 대체하여 사용할 수 있다. (ex $0: 첫번째, $1:두번째)
+* 마지막 줄은 반환한다고 여기어 return 생략가능
 
